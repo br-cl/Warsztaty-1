@@ -1,0 +1,52 @@
+/* MAIN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', "Tahoma", "Arial", sans-serif;
+}
+
+.main-width {
+    width: 1075px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    color: white;
+    background-color: black;
+    height: 40px;
+}
+
+.nav_bar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_logo {
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: .8px;
+}
+
+.navbar_logo > span {
+    color: #00C7AB;
+    font-weight: 700;
+}
+
+.nav_ul {
+    display: flex;
+}
+
+.nav_element {
+    display: flex;
+    padding: 10px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+}
