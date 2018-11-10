@@ -59,49 +59,50 @@ header {
     height: 504px;
 }
 
-.section1 > div {
+#section1_div {
     display: flex;
+    justify-content: space-around
 }
 
 .section1_main {
-    position: absolute;
     display: flex;
-    justify-content: space-around;
 }
 
 .first_slide { 
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
 }
 
-.first_slide > img {
+.firstslide_img {
+    display: flex;
+    background-image: url(../images/black_chair.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 425px;
     position: relative;
-    top: 29px;
-    right: 70px;
-    z-index: 1;
-    width: 595px;
-    height: 420px;
+    top: 25px;
+    right: 50px;
 }
 
 .firstslide_div {
-    /* MARGINY!!!!!! */
-    margin-top: 10px;
-    position: relative;
-    right: 143px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 5px;
+    right: 25px;
 }
 
 .fs_header {
     font-size: 40px;
+    font-weight: 300;
 }
 
 .fs_header > span {
     color: #00C7AB;
+    font-weight: 700;
 }
 
 .fs_paragraph {
@@ -110,16 +111,15 @@ header {
     text-align: center;
     line-height: 22px;
     width: 435px;
-    margin-top: 28px;
+    margin-top: 25px;
     margin-bottom: 30px;
 }
 
 .fs_button {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     font-size: 24.4px;
-    letter-spacing: 0px;
     background-color: #00C7AB;
     border-radius: 8px;
     height: 52px;
@@ -128,25 +128,22 @@ header {
 }
 
 .fs_button > a {
-    display: flex;
     text-decoration: none;
-    padding-top: 13px;
-    padding-left: 10px;
     color: white;
 }
 
-.section1_left { /* do dalszej obróbki */
+.section1_left {
+    color: #00C7AB;
     font-size: 80px;
     display: flex;
     position: relative;
-    top: 5px;
-    left: 10px;
+    right: 65px;
 }
 
-.section1_right { /* do dalszej obróbki */
+.section1_right {
+    color: #00C7AB;
     font-size: 80px;
     display: flex;
     position: relative;
-    top: 5px;
-    right: 50px;
+    left: 65px;
 }
