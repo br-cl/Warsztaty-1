@@ -51,7 +51,7 @@ header {
     font-weight: 700;
 }
 
-/* SECTION 1*/
+/* SECTION 1 */
 
 .section1 {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(199,199,199,1) 100%);
@@ -61,11 +61,12 @@ header {
 
 #section1_div {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .section1_main {
     display: flex;
+    align-items: center;
 }
 
 .first_slide { 
@@ -147,3 +148,104 @@ header {
     position: relative;
     left: 65px;
 }
+
+/* SECTION 2 */
+
+.section2 {
+    background-color: white;
+    display: flex;
+    height: 350px;
+}
+
+#section2_div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.sec2_left_div {
+    width: 330px;
+    height: 225px;
+    background-image: url(../images/box1_img.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec2_left_div > h3 {
+    background-color: rgba(255,255,255, 0.4);
+    font-size: 15px;
+    word-spacing: 3px;
+    padding-left: 17px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    width: inherit;
+    height: 60px;
+}
+
+.sec2_mid_div {
+    width: 330px;
+    height: 225px;
+    background-image: url(../images/box2_img.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec2_mid_div > h3 {
+    background-color: rgba(255,255,255, 0.4);
+    font-size: 15px;
+    word-spacing: 3px;
+    padding-left: 17px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    width: inherit;
+    height: 60px;
+}
+
+.sec2_right_div {
+    width: 340px;
+    height: 250px;
+    border: 1px solid lightgrey;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sec2_right_div > h3 {
+    font-size: 15px;
+    word-spacing: 3px;
+    position: relative;
+    bottom: 10px;
+}
+
+.sec2_right_div > p {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    word-spacing: 0.2px;
+    line-height: 20px;
+}
+
+#sec2-right-p2 {
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
