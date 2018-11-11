@@ -164,6 +164,7 @@ header {
 }
 
 .sec2_left_div {
+    position: relative;
     width: 330px;
     height: 225px;
     background-image: url(../images/box1_img.jpg);
@@ -183,7 +184,18 @@ header {
     height: 60px;
 }
 
+.sec2_left_div>h3::after {
+    content: "";
+    background-color: #00C7AB;
+    height: 7px;
+    width: 140px;
+    position: absolute;
+    top: 180px;
+    right: 177px;
+}
+
 .sec2_mid_div {
+    position: relative;
     width: 330px;
     height: 225px;
     background-image: url(../images/box2_img.jpg);
@@ -203,7 +215,20 @@ header {
     height: 60px;
 }
 
+.sec2_mid_div>h3::after {
+    content: "";
+    background-color: #00C7AB;
+    height: 7px;
+    width: 140px;
+    position: absolute;
+    top: 180px;
+    right: 175px;
+}
+
 .sec2_right_div {
+    position: relative;
+    bottom: 2px;
+    left: 2px;
     width: 340px;
     height: 250px;
     border: 1px solid lightgrey;
@@ -223,10 +248,18 @@ header {
     bottom: 10px;
 }
 
+.sec2_right_div>h3::after {
+    content: "";
+    background-color: #00C7AB;
+    height: 7px;
+    width: 140px;
+    position: absolute;
+    top: 21px;
+    left: 1px;
+}
+
 .sec2_right_div > p {
     font-size: 14px;
-    letter-spacing: 0.1px;
-    word-spacing: 0.2px;
     line-height: 20px;
 }
 
@@ -234,6 +267,8 @@ header {
     position: relative;
     top: 10px;
 }
+
+/* SECTION 3 */
 
 
 
