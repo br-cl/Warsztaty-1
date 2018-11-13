@@ -11,7 +11,7 @@
     
 <body>
     
-    <!-- NAGŁÓWEK / CZARNY PASEK -->
+    <!-- HEADER -->
     
     <header>
         <div class="main-width">
@@ -32,7 +32,7 @@
         </div>
     </header>
     
-    <!-- FOTEL I TEKST / SLIDER -->
+    <!-- SECTION 1 -->
     
     <section class="section1">
         <div id="section1_div" class="main-width">
@@ -53,7 +53,7 @@
         </div>
     </section>
     
-    <!-- 2 ZDJĘCIA I BOX Z TEKSTEM -->
+    <!-- SECTION 2 -->
     
     <section class="section2">
         <div id="section2_div" class="main-width">
@@ -71,7 +71,7 @@
         </div>
     </section>
     
-    <!-- 3 BOXY CENNIKA -->
+    <!-- SECTION 3 -->
     
     <section class="section3">
         <div id="section3_div" class="main-width">
@@ -130,18 +130,62 @@
         </div>
     </section>
     
-    <!-- FORMULARZ U DOŁU STRONY -->
+    <!-- FORM -->
     
-    <section>
-    
+    <section class="main_form">
+      <form class="main-width">
+        
+        <div class="right_form">
+          
+          <h3 class="form_header">KONTAKT</h3>
+          <label class="name_label">
+            <input class="form_name" type="text" placeholder="Imię"/>
+          </label>
+                
+          <label class="email_label">
+            <input class="form_email" type="email" placeholder="email"/>
+          </label>
+
+          <label class="message_label">
+            <textarea class="form_message" placeholder="Wiadomość"></textarea>
+          </label>
+                
+        </div>
+            
+        <div class="left_form">
+                
+          <div class="form_img"></div>
+          <label class="form_checkbox">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            <p class="form_info">Zgadzam się na przetwarzanie danych osobowych</p>
+          </label> 
+            
+          <button type="submit" class="form_button">WYŚLIJ</button>
+                
+        </div>
+        
+      </form>
     </section>
     
-    <!-- STOPKA STRONY -->
+    <!-- FOOTER -->
     
-    <footer>
-    
+    <footer class="main_footer">
+      <div class="main-width">
+        <div class="left_footer">Copyright 2018 | All Rights Reserved. - Sit On Chair
+        </div>
+        
+        <div class="footer_images">
+          <a class="footer_img1" href="#"></a>
+          <a class="footer_img2" href="#"></a>
+          <a class="footer_img3" href="#"></a>
+          <a class="footer_img4" href="#"></a>
+        </div>
+        
+        <div class="footer_logo">SIT<span> ON </span>CHAIR</div>
+        
+      </div>
     </footer>
-    
         
     <script src="scripts/script.js"></script>    
 </body>

@@ -95,7 +95,7 @@ header {
     top: 50px;
     left: 13px;
     visibility: hidden;
-    transition: 0.1s 0.3s;
+    transition: 0.1s 0.5s;
 }
 
 .dropdown1:before {
@@ -753,9 +753,258 @@ header {
 
 /* FORM */
 
+.main_form {
+    background-color: white;
+    display: flex;
+    height: 550px;
+    padding-bottom: 40px;
+}
 
+.main_form > form {
+    display: flex;
+    justify-content: space-around;
+}
 
+.right_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 9px;
+}
 
+.form_header {
+    font-size: 22px;
+    font-weight: 100;
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
 
+.form_header::after {
+    content: "";
+    background-color: #00C7AB;
+    height: 8px;
+    width: 320px;
+    position: absolute;
+    left: 0px;
+    top: 32px;
+}
 
+.form_name {
+    width: 635px;
+    height: 65px;
+    font-size: 35px;
+    padding-left: 10px;
+    letter-spacing: -1px;
+    border: 1px solid #00C7AB;
+    position: relative;
+    top: 30px;
+}
 
+.form_name::-webkit-input-placeholder {
+    color: lightgray;
+}
+
+.form_email {
+    width: 635px;
+    height: 65px;
+    font-size: 34px;
+    padding-left: 10px;
+    letter-spacing: -1px;
+    border: 1px solid #00C7AB;
+    position: relative;
+    top: 15px;
+}
+
+.form_email::-webkit-input-placeholder {
+    color: lightgray;
+}
+
+.form_message {
+    width: 635px;
+    height: 190px;
+    font-size: 34px;
+    padding-left: 12px;
+    padding-top: 12px;
+    letter-spacing: -1.5px;
+    border: 1px solid #00C7AB;
+    resize: none;
+}
+
+.form_message::-webkit-input-placeholder {
+    color: lightgray;
+}
+
+.left_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form_img {
+    background-image: url(../images/red_chair.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 30px;
+    right: 10px;
+}
+
+/* CUSTOM CHECKBOX */
+
+.form_checkbox {
+    display: flex;
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    padding-left: 60px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser default checkbox */
+.form_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    border: 1px solid #00C7AB;
+}
+
+/* Mouse-over, add a grey background color */
+.form_checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add image */
+.form_checkbox input:checked ~ .checkmark {
+    background-color: white;
+    background-image: url(../images/form_ok.jpg);
+    border: 1px solid #00C7AB;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CUSTOM CHECKBOX FINISH */
+
+.form_info {
+    width: 300px;
+    color: lightgray;
+    font-size: 21px;
+    letter-spacing: -0.7px;
+    line-height: 24px;
+}
+
+.form_button {
+    width: 345px;
+    height: 70px;
+    background-color: #00C7AB;
+    font-size: 34px;
+    color: white;
+    font-weight: 700;
+    border-radius: 9px;
+    border: none;
+    position: relative;
+    left: 12px;
+    bottom: 10px;
+}
+
+/* FOOTER */
+
+.main_footer {
+  background-color: white;
+    display: flex;
+    height: 100px;
+    padding-bottom: 11px;
+}
+
+.main_footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_footer {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  padding-left: 10px;
+}
+
+.footer_images {
+  display: flex;
+  padding-bottom: 15px;
+  position: relative;
+  left: 110px;
+}
+
+.footer_img1 {
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/flickr.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px;
+}
+
+.footer_img2 {
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/vimeo.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 4px;
+}
+
+.footer_img3 {
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/pinterest.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 4px;
+}
+
+.footer_img4 {
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/twitter.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 4px;
+}
+
+.footer_logo {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  word-spacing: 3px;
+  padding-right: 12px;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.footer_logo > span {
+  font-weight: 700;
+}
