@@ -369,6 +369,10 @@ header {
 
 /* SECTION 3 - FIRST ELEMENT */
 
+/* 
+    Niepotrzebnie kazdy z boxów jest ostylowany osobno. 
+    Mogłeś dać im wspólną klasę. W końcu wyglądają tak samo. A tak, masz mnóstwo kodu który sie powtarza.
+*/
 .section3_first_element {
     display: flex;
     flex-direction: column;

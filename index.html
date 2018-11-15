@@ -19,8 +19,8 @@
                 <div class="navbar_logo">SIT<span> ON </span>CHAIR</div>
                 <ul class="nav_ul">
                     <li class="nav_element">O FIRMIE
-                        <ul class="dropdown1">
-                            <li class="drop1_element"><a href="#">Aktualności</a></li>
+                        <ul class="dropdown1"> <!-- Ta jedynka przy tej nazwie klasy nie jest potrzebna -->
+                            <li class="drop1_element"><a href="#">Aktualności</a></li> <!-- A tutaj mogłeś lecieć dalej z nazewnictwem dropdown_elment -->
                             <li class="drop1_element"><a href="#">Nasz team</a></li>
                             <li class="drop1_element"><a href="#">Historia</a></li>
                         </ul>
@@ -34,10 +34,11 @@
     
     <!-- SECTION 1 -->
     
+    <!-- Widzę, ze dajesz bardzo duzo klas, a w wielu przypadkach nie potrzeba. Np. w tym li masz fs_header, fs_paragraph itd. a wystarczy ostylować h1 i p -->
     <section class="section1">
         <div id="section1_div" class="main-width">
             <ul class="section1_main">
-                <a class="section1_left" href="#">&lt</a>
+                <a class="section1_left" href="#">&lt</a> <!-- To się musi znaleźć poza ul -->
                 <li class="first_slide">
                     <div class="firstslide_img"></div>
                     <div class="firstslide_div">
@@ -48,7 +49,7 @@
                         </div>
                     </div>
                 </li>
-                <a class="section1_right" href="#">&gt</a>
+                <a class="section1_right" href="#">&gt</a> <!-- To tez -->
             </ul>
         </div>
     </section>
